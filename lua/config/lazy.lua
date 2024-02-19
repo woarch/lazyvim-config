@@ -12,6 +12,9 @@ require("lazy").setup({
     { "LazyVim/LazyVim", import = "lazyvim.plugins" },
     -- { import = "lazyvim.plugins.extras.ui.mini-animate" },
 
+    -- formatting
+    { import = "lazyvim.plugins.extras.formatting.prettier" },
+
     -- dap
     { import = "lazyvim.plugins.extras.dap.nlua" },
     { import = "lazyvim.plugins.extras.dap.core" },
