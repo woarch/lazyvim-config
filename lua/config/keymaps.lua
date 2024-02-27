@@ -24,10 +24,10 @@ vim.keymap.set('n', 'q', ':q<CR>')
 
 
 -- debug
-vim.keymap.set('n', 'tb', ':DapToggleBreakPoint')
+vim.keymap.set('n', 'tb', function() require("dap").toggle_breakpoint() end)
 vim.keymap.set('n', 'tB', function() require("dap").set_breakpoint(vim.fn.input('Breakpoint condition: ')) end)
-vim.keymap.set('n', 'tc', ':DapContinue')
-vim.keymap.set('n', 'ti', ':DapStepInto')
-vim.keymap.set('n', 'to', ':DapStepOut')
-vim.keymap.set('n', 'tO', ':DapStepOver')
+vim.keymap.set('n', 'tc', function() require("dap").continue() end)
+vim.keymap.set('n', 'ti', function() require("dap").step_into() end)
+vim.keymap.set('n', 'to', function() require("dap").step_out() end)
+vim.keymap.set('n', 'tO', function() require("dap").step_over() end)
 vim.keymap.set('n', 'tu', function() require("dapui").toggle({ }) end)
