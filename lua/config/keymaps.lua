@@ -20,7 +20,7 @@ vim.keymap.set("i", "<C-o>", "<Esc>o")
 
 
 -- quick quit
-vim.keymap.set('n', 'q', ':q<CR>')
+vim.keymap.set('n', 'q', '<cmd>q<CR>')
 
 
 -- debug
